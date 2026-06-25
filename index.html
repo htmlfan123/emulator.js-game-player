@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda!!!!!!</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 640px;
+            height: 480px;
+            max-width: 100%;
+            background-color: #000;
+            border: 2px solid #444;
+        }
+        #game-player {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Legend of Zelda: Majora's Mask</h1>
+
+    <div class="container">
+        <div id="game-player"></div>
+    </div>
+
+    <script type="text/javascript">
+        // Global variables required by emualtor js
+        var EJS_player = '#game-player';
+        var EJS_core = 'n64'; // specifies nintendo 64 core
+
+        // da path pointing to the EmulatorJS data directory CDN
+        var EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+
+        // Provide the URL to your rom file ex https://example.com/youramazinggamromurl.z64
+        var EJS_gameUrl = 'https://connor5.pythonanywhere.com/majora.z64';
+    </script>
+
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
+</body>
+</html>
