@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelda!!!!!!</title>
+    <title>ROM Player</title>
     <style>
         body {
             background-color: #111;
@@ -31,22 +31,21 @@
 </head>
 <body>
 
-    <h1>The Legend of Zelda: Majora's Mask</h1>
+    <h1>ROM Player</h1>
 
     <div class="container">
         <div id="game-player"></div>
     </div>
 
     <script type="text/javascript">
-        // Global variables required by emualtor js
         var EJS_player = '#game-player';
-        var EJS_core = 'n64'; // specifies nintendo 64 core
+        var EJS_core = 'n64'; 
 
-        // da path pointing to the EmulatorJS data directory CDN
+       
         var EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
 
-        // Provide the URL to your rom file ex https://example.com/youramazinggamromurl.z64
-        var EJS_gameUrl = 'https://connor5.pythonanywhere.com/majora.z64';
+        // Provide the URL to your rom file ex example.com/game.z64
+        var EJS_gameUrl = 'https://example.com/rom.z64';
     </script>
 
     <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
